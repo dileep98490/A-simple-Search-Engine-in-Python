@@ -107,6 +107,7 @@ def QuickSort(pages,ranks):#Sorting in descending order
 		pages[i-1],pages[0]=pages[0],pages[i-1]
 		QuickSort(pages[1:i],ranks)
 		QuickSort(pages[i+1:len(pages)],ranks)
+#you can directly use the library sort() function, which is optimized and would enhance performance for more depth
 
 def Look_up_new(index,ranks,keyword):
 	pages=Look_up(index,keyword)
